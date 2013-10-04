@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map For DA8568C
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DA8568C	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+write	KEYWORD2
+enable_internal_ref	KEYWORD2
+disable_internal_ref	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+WRITE_UPDATE_N	LITERAL1
+SETUP_INTERNAL_REGISTER	LITERAL1
+
