@@ -20,17 +20,12 @@ void DA8568C::init() {
   digitalWrite(_slaveselectpin, LOW);
   digitalWrite(_ldacpin, HIGH);
   digitalWrite(_clrpin, LOW);
-  // TODO: probably these delays can be shortened...
-  delay(500);
+  __asm("nop\n\t");
+  __asm("nop\n\t");
   digitalWrite(_clrpin, HIGH);
-  delay(500);
-  delay(1000);
   write(SETUP_INTERNAL_REGISTER, 0, 1); //set up internal register on DAC
-  delay(1000);
   write(POWER, 0, 0);
-  delay(1000);
   write(RESET, 0, 0);
-  delay(1000);
 }
 
 void DA8568C::output_bytes(byte b1, byte b2, byte b3, byte b4, boolean ldacswitch) {
