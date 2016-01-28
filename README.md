@@ -11,7 +11,7 @@ It is written for TI DA8568C and probably also usable with the AD5668 16 Bit DAC
 
 I've tested the code on the Arduino Duemilanove Platform using just the Chip,
 connected as written in the comments of the header file and validating it with
-and DMM.
+and DVM.
 
-examples are about to be committed soon...
+You will find a very basic and simple example in the examples folder. This sketch simply outputs an increasing integer to all DAC outputs (as well as to the serial line)- you can measure them using an DVM or similar.
 
